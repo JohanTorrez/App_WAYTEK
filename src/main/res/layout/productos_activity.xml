@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sena.waytek.ProductosActivity">
+
+
+        <ProgressBar
+            android:id="@+id/progressBarProducts"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="169dp"
+            android:layout_height="174dp"
+            android:backgroundTint="#2B2B2B"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/Way_Medium"
+            android:progressBackgroundTint="#3C3F41"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerView_Products"
+            app:layout_constraintEnd_toStartOf="@+id/recyclerView_Products"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/recyclerView_Products"
+            app:layout_constraintTop_toTopOf="@+id/recyclerView_Products" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_Products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
