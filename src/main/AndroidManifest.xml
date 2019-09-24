@@ -44,7 +44,7 @@
             android:resource="@array/preloaded_fonts" />
         <activity android:name=".DetalleActivity"
             android:label="@string/ProductoActivityBarName"
-            android:parentActivityName=".ProductosActivity"></activity>
+            android:parentActivityName=".ProductosActivity"/>
 
     </application>
 
