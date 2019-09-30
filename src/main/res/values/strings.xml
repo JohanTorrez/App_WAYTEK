@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">WAYTEK</string>
+    <!--ScreenSplash-->
+    <string name="splash_logo" translatable="false">Logo_Splash</string>
+    <!--Login-->
+    <string name="title_login">INICIO DE SESION</string>
+    <string name="logo" translatable="false">Logo</string>
+    <string name="correo_ingr">Correo electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="boton_ingresar">Ingresar</string>
+    <string name="crear_cuenta">O crea tu cuenta</string>
+    <!--Registro-->
+    <string name="title_regis">REGISTRARSE</string>
+    <string name="nombr_usua">Nombre</string>
+    <string name="apel_usua">Apellido</string>
+    <string name="email_usua">Correo electrónico</string>
+    <string name="ciudad_usua">Ciudad</string>
+    <string name="depar_usua">Departamento</string>
+    <string name="direc_usua">Direccion</string>
+    <string name="gen_masculino">Masculino</string>
+    <string name="gen_femenino">Femenino</string>
+    <string name="documento">N° Documento</string>
+    <string name="telefono">N° teléfono</string>
+    <string name="crear_contra">Crear contraseña</string>
+    <string name="confirm_contra">Confirmar contraseña</string>
+    <string name="boton_regis">Registrarse</string>
+    <string name="button_google" translatable="false">Ingresar con Google</string>
+    <string name="iniciar_sesion">Ya tengo cuenta</string>
+    <string name="requisitos_contra">La contraseña debe tener mínimo 8 caracteres.</string>
+    <string name="errorFirebase">Error al crear usuario</string>
+    <string name="titleCamReque">Ups!</string>
+    <string name="textCamReque">Asegúrate de llenar los campos requeridos :)</string>
+    <string name="erroInputEmpty">Requerido</string>
+    <string name="errorCreateUserEmail">La dirección de correo electrónico ya está en uso por otra cuenta.</string>
+
+    <!--Parte de Andrés-->
+    <string name="productos">Productos</string>
+    <string name="descripcionproductos" translatable="false">Botón para acceder a los productos</string>
+    <string name="ofertas">Ofertas</string>
+    <string name="descripcionofertas" translatable="false">Botón para acceder a las ofertas</string>
+    <string name="ProductosActivityBarName">Productos</string>
+    <string name="ProductoActivityBarName">Detalles del producto</string>
+    <string name="textotipoproducto">Tipo de Producto: </string>
+</resources>
