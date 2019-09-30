@@ -82,7 +82,7 @@
                 app:srcCompat="@drawable/ic_discount" />
 
             <TextView
-                android:id="@+id/textViewCardSales2"
+                android:id="@+id/textViewCardSales"
                 style="@style/Widget.AppCompat.TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -105,13 +105,14 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/cardViewOfertas"
         app:layout_constraintTop_toTopOf="@+id/guideline2">
+        s
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="100dp"
             android:layout_height="100dp">
 
             <ImageButton
-                android:id="@+id/imageButtonSales"
+                android:id="@+id/imageButtonSales2"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="8dp"
@@ -137,7 +138,7 @@
                 android:textColor="@color/Way_Dark"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButtonSales" />
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonSales2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
