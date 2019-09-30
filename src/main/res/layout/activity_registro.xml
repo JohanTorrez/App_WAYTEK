@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:theme="@style/AppTheme"
+    tools:context=".RegistroActivity">
+
+    <ImageView
+        android:id="@+id/imgregistrarse"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/title_regis"
+        app:srcCompat="@drawable/titleregis" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_nombre"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/boton_inputs"
+            android:backgroundTint="#ECECEC"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/nombr_usua"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:selectAllOnFocus="false"
+            android:textColor="#424242"
+            android:textColorHint="#868686"
+            android:textColorLink="#0063FF"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/input_apellido"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_inputs"
+            android:backgroundTint="#ECECEC"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/apel_usua"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:selectAllOnFocus="false"
+            android:textColor="#424242"
+            android:textColorHint="#868686"
+            android:textColorLink="#0063FF"
+            android:visibility="visible" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/input_sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="@string/gen_masculino"
+                android:textColor="#777777" />
+
+            <RadioButton
+                android:id="@+id/femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="@string/gen_femenino"
+                android:textColor="#777777" />
+        </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_ciudad"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/boton_inputs"
+            android:backgroundTint="#ECECEC"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/ciudad_usua"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:selectAllOnFocus="false"
+            android:textColor="#424242"
+            android:textColorHint="#868686"
+            android:textColorLink="#0063FF"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/input_departamento"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_inputs"
+            android:backgroundTint="#ECECEC"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/depar_usua"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:selectAllOnFocus="false"
+            android:textColor="#424242"
+            android:textColorHint="#868686"
+            android:textColorLink="#0063FF"
+            android:visibility="visible" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_direccion"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_inputs"
+            android:backgroundTint="#ECECEC"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/direc_usua"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:selectAllOnFocus="false"
+            android:textColor="#424242"
+            android:textColorHint="#868686"
+            android:textColorLink="#0063FF"
+            android:visibility="visible" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/input_documento"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/boton_inputs"
+        android:backgroundTint="#ECECEC"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/documento"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:selectAllOnFocus="false"
+        android:textColor="#424242"
+        android:textColorHint="#868686"
+        android:textColorLink="#0063FF"
+        android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/input_telefono"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_inputs"
+            android:backgroundTint="#ECECEC"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/telefono"
+            android:inputType="number|phone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:selectAllOnFocus="false"
+            android:textColor="#424242"
+            android:textColorHint="#868686"
+            android:textColorLink="#0063FF"
+            android:visibility="visible" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <EditText
+        android:id="@+id/input_email"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/boton_inputs"
+        android:backgroundTint="#ECECEC"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/email_usua"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:selectAllOnFocus="false"
+        android:textColor="#424242"
+        android:textColorHint="#868686"
+        android:textColorLink="#0063FF"
+        android:visibility="visible" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_crear_contra"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/boton_inputs"
+            android:backgroundTint="#ECECEC"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/crear_contra"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:selectAllOnFocus="false"
+            android:textColor="#424242"
+            android:textColorHint="#868686"
+            android:textColorLink="#0063FF"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/input_confirm_contra"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_inputs"
+            android:backgroundTint="#ECECEC"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/confirm_contra"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:selectAllOnFocus="false"
+            android:textColor="#424242"
+            android:textColorHint="#868686"
+            android:textColorLink="#0063FF"
+            android:visibility="visible" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/requisitos_contra"
+        android:textColor="#4A000000" />
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/boton_degra_radius"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/boton_regis"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/link_inicio"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:onClick="volverLogin"
+        android:text="@string/iniciar_sesion"
+        android:textColor="#9C001658"
+        android:textSize="18sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

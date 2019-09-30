@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imginiciosesion"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/title_login"
+        app:srcCompat="@drawable/titlelogin" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/logologin"
+        android:contentDescription="@string/logo" />
+
+    <EditText
+        android:id="@+id/input_correolog"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/boton_inputs"
+        android:backgroundTint="#ECECEC"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/correo_ingr"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:selectAllOnFocus="false"
+        android:textColor="#424242"
+        android:textColorHint="#868686"
+        android:textColorLink="#0063FF"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/input_contrasena"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/boton_inputs"
+        android:backgroundTint="#ECECEC"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/contrasena"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#424242"
+        android:textColorHint="#868686"
+        android:textColorLink="#0063FF" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/boton_degra_radius"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/boton_ingresar"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/link_registro"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:onClick="link_registro"
+        android:text="@string/crear_cuenta"
+        android:textColor="#9C001658"
+        android:textSize="18sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
