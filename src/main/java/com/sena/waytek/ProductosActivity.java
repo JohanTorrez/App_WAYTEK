@@ -86,6 +86,10 @@ protected void onResume(){
                             productObject.getString("nombre_pc_escritorio"),
                             productObject.getString("nombre_presupuesto"),
                             productObject.getString("nombre_accesorio"),
+                            productObject.getString("procesador"),
+                            productObject.getString("almacenamiento"),
+                            productObject.getString("ram"),
+                            productObject.getString("tarjeta_video"),
                             productObject.getString("foto_producto"),
                             productObject.getString("descripcion_portatil"),
                             productObject.getString("descripcion_pc_escritorio"),
@@ -114,11 +118,9 @@ protected void onResume(){
         });
         Volley.newRequestQueue(this).add(stringRequest);
     }
-
     public void detalleproductos(View view){
         Intent detalleproductos = new Intent(this, DetalleActivity.class);
         startActivity(detalleproductos);
-
     }
 
     @Override

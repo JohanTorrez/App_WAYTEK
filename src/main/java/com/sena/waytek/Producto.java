@@ -12,6 +12,10 @@ public class Producto implements Parcelable {
     private String nombre_pc_escritorio;
     private String nombre_presupuesto;
     private String nombre_accesorio;
+    private String procesador;
+    private String almacenamiento;
+    private String ram;
+    private String tarjetavideo;
     private String foto_producto;
     private String descripcion_portatil;
     private String descripcion_pc_escritorio;
@@ -23,7 +27,7 @@ public class Producto implements Parcelable {
     private int precio_total_producto;
     private String fecha_publicacion_producto;
 
-    public Producto(int id_producto, String nombre_tienda, String tipo_producto, String nombre_portatil, String nombre_pc_escritorio, String nombre_presupuesto, String nombre_accesorio, String foto_producto, String descripcion_portatil,String descripcion_pc_escritorio, String descripcion_accesorio, String descripcion_presupuesto, String telefono_tienda, int precio_producto, int descuento_producto, int precio_total_producto, String fecha_publicacion_producto){
+    public Producto(int id_producto, String nombre_tienda, String tipo_producto, String nombre_portatil, String nombre_pc_escritorio, String nombre_presupuesto, String nombre_accesorio, String procesador, String almacenamiento, String ram, String tarjetavideo, String foto_producto, String descripcion_portatil,String descripcion_pc_escritorio, String descripcion_accesorio, String descripcion_presupuesto, String telefono_tienda, int precio_producto, int descuento_producto, int precio_total_producto, String fecha_publicacion_producto){
         this.id_producto = id_producto;
         this.nombre_tienda = nombre_tienda;
         this.tipo_producto = tipo_producto;
@@ -31,6 +35,10 @@ public class Producto implements Parcelable {
         this.nombre_pc_escritorio=nombre_pc_escritorio;
         this.nombre_presupuesto= nombre_presupuesto;
         this.nombre_accesorio = nombre_accesorio;
+        this.procesador =procesador;
+        this.almacenamiento=almacenamiento;
+        this.ram=ram;
+        this.tarjetavideo=tarjetavideo;
         this.foto_producto = foto_producto;
         this.descripcion_portatil = descripcion_portatil;
         this.descripcion_pc_escritorio = descripcion_pc_escritorio;
@@ -51,6 +59,10 @@ public class Producto implements Parcelable {
         nombre_pc_escritorio = in.readString();
         nombre_presupuesto = in.readString();
         nombre_accesorio = in.readString();
+        procesador=in.readString();
+        almacenamiento=in.readString();
+        ram=in.readString();
+        tarjetavideo=in.readString();
         foto_producto = in.readString();
         descripcion_portatil= in.readString();
         descripcion_pc_escritorio=in.readString();
@@ -83,6 +95,10 @@ public class Producto implements Parcelable {
     public String getNombre_pc_escritorio() { return nombre_pc_escritorio; }
     public String getNombre_presupuesto() { return nombre_presupuesto;}
     public String getNombre_accesorio() { return nombre_accesorio; }
+    public String getProcesador(){return procesador;}
+    public String getAlmacenamiento(){return almacenamiento;}
+    public String getRam(){return ram;}
+    public String getTarjetavideo(){return tarjetavideo;}
     public String getFoto_producto(){return foto_producto;}
     public String getDescripcion_portatil(){return descripcion_portatil;}
     public String getDescripcion_pc_escritorio(){return descripcion_pc_escritorio;}
@@ -108,6 +124,10 @@ public class Producto implements Parcelable {
         parcel.writeString(nombre_pc_escritorio);
         parcel.writeString(nombre_presupuesto);
         parcel.writeString(nombre_accesorio);
+        parcel.writeString(procesador);
+        parcel.writeString(almacenamiento);
+        parcel.writeString(ram);
+        parcel.writeString(tarjetavideo);
         parcel.writeString(foto_producto);
         parcel.writeString(descripcion_portatil);
         parcel.writeString(descripcion_pc_escritorio);
