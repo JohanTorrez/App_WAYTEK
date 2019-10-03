@@ -12,7 +12,7 @@
       android:layout_height="wrap_content"
       android:layout_gravity="center"
       android:gravity="center"
-      android:text="33"
+      android:text="Disponibe en la próxima versión :)"
       android:textAppearance="@style/TextAppearance.AppCompat.Display1"
       android:textColor="@color/Way_Primary"
       android:textStyle="bold"/>
