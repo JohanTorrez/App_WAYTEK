@@ -9,9 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
@@ -19,20 +19,22 @@ import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 import java.util.List;
+import java.util.Objects;
 
 public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ProductViewHolder>{
     private Context mCtx;
     private List<Producto> productList;
     private onProductListener mOnProductListener;
 
-    public ProductsAdapter(Context mCtx, List<Producto> productList, onProductListener onProductListener) {
+    ProductsAdapter(Context mCtx, List<Producto> productList, onProductListener onProductListener) {
         this.mCtx = mCtx;
         this.productList = productList;
         this.mOnProductListener  = onProductListener;
     }
 
+    @NonNull
     @Override
-    public ProductViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
         View view = inflater.inflate(R.layout.product_list, parent, false);
         return  new ProductViewHolder(view, mOnProductListener);
@@ -48,7 +50,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
             @Override
             public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
 
-                Toast.makeText(mCtx, e.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(mCtx, Objects.requireNonNull(e).getMessage(), Toast.LENGTH_SHORT).show();
                 return false;
             }
 
@@ -95,7 +97,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
         ImageView imageView;
         onProductListener onProductListener;
 
-        public ProductViewHolder(View itemView, onProductListener onProductListener) {
+        ProductViewHolder(View itemView, onProductListener onProductListener) {
             super(itemView);
 
             textViewTitle = itemView.findViewById(R.id.textViewTitle);
