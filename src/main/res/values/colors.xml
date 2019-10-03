@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="Way_White">#FFFFFF</color>
+    <color name="Way_Gray">#E9E9E9</color>
     <color name="Way_Primary">#0073FC</color>
     <color name="Way_Primary_Deg">#5900FF</color>
     <color name="Way_Medium">#0047A5</color>
@@ -8,6 +9,6 @@
     <color name="Way_UDark">#00092C</color>
     <color name="Way_Contrast">#D81B60</color>
     <color name="Way_Whatsapp">#25D366</color>
-    <color name="Way_Semi_Black">#141414</color>
+    <color name="Way_Semi_Black">#3E3E3E</color>
 
 </resources>
