@@ -1,16 +1,4 @@
 <resources>
-    <string name="app_name">WAYTEK</string>
-    <string name="logoapp">Logo de la aplicación</string>
-    <string name="text_bienvenida">Bienvenidos a WAYTEK</string>
-    <string name="peso">$ </string>
-    <string name="productos">Productos</string>
-    <string name="descripcionproductos">Botón para acceder a los productos</string>
-    <string name="ofertas">Ofertas</string>
-    <string name="descripcionofertas">Botón para acceder a las ofertas</string>
-    <string name="ProductosActivityBarName">Productos</string>
-    <string name="ProductoActivityBarName">Detalles del producto</string>
-    <string name="textotipoproducto">Tipo de Producto</string>
-    <string name="textotienda">Vendedor</string>
      <string name="app_name">WAYTEK</string>
     <string name="logoapp">Logo de la aplicación</string>
     <string name="text_bienvenida">Bienvenidos a WAYTEK</string>
