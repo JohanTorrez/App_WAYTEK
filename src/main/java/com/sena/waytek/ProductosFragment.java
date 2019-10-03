@@ -15,28 +15,7 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-import c
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-om.android.volley.Request;
+import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
@@ -172,5 +151,3 @@ public void onResume(){
         loadProducts(getActivity());
     }
 }
-
-z<x
